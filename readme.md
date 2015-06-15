@@ -1,0 +1,1 @@
+This is the code and design files for Ourglass, an open source watch. Feel free to use, modify, and extend in any way you see fit, all are released under the MIT license. http://ourglass.watch for updates.
