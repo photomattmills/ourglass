@@ -1,5 +1,5 @@
 M48
-;DRILL file {KiCad (2015-04-30 BZR 5634)-product} date Friday, May 08, 2015 'PMt' 05:38:57 PM
+;DRILL file {KiCad (2015-04-30 BZR 5634)-product} date Monday, June 22, 2015 'AMt' 12:37:56 AM
 ;FORMAT={-:-/ absolute / inch / decimal}
 FMAT,2
 INCH,TZ
@@ -37,7 +37,6 @@ X6.8543Y-3.3425
 X6.8563Y-3.5276
 X6.878Y-4.437
 X6.8858Y-3.4488
-X6.8937Y-3.5512
 X6.9252Y-4.0354
 X6.9291Y-3.9449
 X6.9567Y-3.9961
