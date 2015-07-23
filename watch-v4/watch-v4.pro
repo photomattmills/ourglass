@@ -1,6 +1,6 @@
-update=Saturday, May 02, 2015 'PMt' 02:12:23 PM
+update=Wednesday, July 22, 2015 'PMt' 05:11:38 PM
 version=1
-last_client=kicad
+last_client=cvpcb
 [pcbnew]
 version=1
 LastNetListRead=
@@ -20,9 +20,6 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[cvpcb]
-version=1
-NetIExt=net
 [general]
 version=1
 [eeschema]
@@ -60,3 +57,6 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
+[cvpcb]
+version=1
+NetIExt=net

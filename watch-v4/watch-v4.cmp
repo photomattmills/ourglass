@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-04-30 BZR 5634)-product   date = Tuesday, July 21, 2015 'PMt' 10:46:12 PM
+Cmp-Mod V01 Created by Cvpcb (2015-04-30 BZR 5634)-product   date = Wednesday, July 22, 2015 'PMt' 05:09:36 PM
 
 BeginCmp
 TimeStamp = /5500DAB9;
@@ -12,6 +12,27 @@ TimeStamp = /550158B4;
 Reference = ANT1;
 ValeurCmp = -;
 IdModule  = watch-v4:antenna;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF389A;
+Reference = C1;
+ValeurCmp = 1uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF0795;
+Reference = C2;
+ValeurCmp = 4.7uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF6475;
+Reference = C3;
+ValeurCmp = 4.7uf;
+IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
