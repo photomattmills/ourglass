@@ -724,7 +724,7 @@ Connection ~ 9100 3950
 Wire Wire Line
 	9600 1350 9600 1700
 Wire Wire Line
-	4900 5550 4900 5950
+	4900 5950 4900 5550
 Wire Wire Line
 	5200 4150 5300 4150
 Wire Wire Line

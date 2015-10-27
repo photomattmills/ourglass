@@ -724,7 +724,7 @@ Connection ~ 9100 3950
 Wire Wire Line
 	9600 1350 9600 1700
 Wire Wire Line
-	4900 5550 4900 5950
+	4900 5950 4900 5550
 Wire Wire Line
 	5200 4150 5300 4150
 Wire Wire Line
@@ -890,7 +890,7 @@ Wire Wire Line
 Connection ~ 1400 1250
 Connection ~ 1400 1150
 Wire Wire Line
-	1400 950  1400 1350
+	1400 1050 1400 1350
 Connection ~ 4900 5950
 Connection ~ 4700 5950
 Connection ~ 4800 5950
@@ -1044,20 +1044,6 @@ F 3 "" H 7350 2200 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7350 1900 7350 2200
-$Comp
-L GND-RESCUE-watch-v4 #PWR022
-U 1 1 55AF865D
-P 7600 2100
-F 0 "#PWR022" H 7600 2100 30  0001 C CNN
-F 1 "GND" H 7600 2030 30  0001 C CNN
-F 2 "" H 7600 2100 60  0000 C CNN
-F 3 "" H 7600 2100 60  0000 C CNN
-	1    7600 2100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7350 2100 7600 2100
-Connection ~ 7350 2100
 Wire Wire Line
 	4950 950  4950 1100
 $EndSCHEMATC

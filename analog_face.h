@@ -6,8 +6,8 @@ Copyright Matt Mills, 2015. Released under the MIT
 license.
 
 *******************************************************/
-#include </Users/matt/Documents/Arduino/libraries/Adafruit_GFX_Library/Adafruit_GFX.h>
-#include </Users/matt/Documents/Arduino/libraries/Adafruit_SHARP_Memory_Display/Adafruit_SharpMem.h>
+#include </Users/mmills/Documents/Arduino/libraries/Adafruit_GFX_Library/Adafruit_GFX.h>
+#include </Users/mmills/Documents/Arduino/libraries/Adafruit_SHARP_Memory_Display/Adafruit_SharpMem.h>
 
 #include <avr/pgmspace.h>
 #include "RTClib.h"
