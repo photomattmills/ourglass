@@ -8,7 +8,7 @@
 #include <Adafruit_LSM9DS0.h>
 
 // any pins can be used
-//
+
 #define SCK 6
 #define MOSI 5
 #define SS 4
@@ -27,30 +27,19 @@ long display_time;
 
 
 void setup () {
-  Serial.begin(9600);
-  Serial.write( "Started!" );
+  // Serial.begin(9600);
   Wire.beginOnPins(2,3);
-  Serial.write( "Wire initialized!" );
-
   SPI.begin();
-  Serial.write( "SPI initialized!" );
   display.begin();
-  Serial.write( "Display initialized!" );
   display.clearDisplay();
-  Serial.write( "Display Cleared!" );
-
   display.setTextColor(BLACK);
-  // if (rtc.now().unixtime() < 1432520763){
+  if (rtc.now().unixtime() < 1448491950){
     rtc.adjust(DateTime(__DATE__, __TIME__));
-  Serial.write( "time adjusted!" );
-
-  // }
+  }
 }
 
 void loop() {
   analog_face.displayAnalog();
-
-  Serial.println( "displayAnalog ran!" );
   display.setCursor(59, 105);
   display.println(zero_pad(rtc.now().second()));
   display.refresh();
