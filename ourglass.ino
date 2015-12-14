@@ -33,7 +33,7 @@ void setup () {
   display.begin();
   display.clearDisplay();
   display.setTextColor(BLACK);
-  if (rtc.now().unixtime() < 1432520763){
+  if (rtc.now().unixtime() < 1448491950){
     rtc.adjust(DateTime(__DATE__, __TIME__));
   }
 }
