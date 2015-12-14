@@ -1,0 +1,255 @@
+Cmp-Mod V01 Created by Cvpcb (2015-04-30 BZR 5634)-product   date = Wednesday, July 22, 2015 'PMt' 05:09:36 PM
+
+BeginCmp
+TimeStamp = /5500DAB9;
+Reference = 12pf1;
+ValeurCmp = C9;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /550158B4;
+Reference = ANT1;
+ValeurCmp = -;
+IdModule  = watch-v4:antenna;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF389A;
+Reference = C1;
+ValeurCmp = 1uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF0795;
+Reference = C2;
+ValeurCmp = 4.7uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /55AF6475;
+Reference = C3;
+ValeurCmp = 4.7uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5470F658;
+Reference = C5;
+ValeurCmp = .22uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5470F78B;
+Reference = C6;
+ValeurCmp = 4.7uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5470F946;
+Reference = C7;
+ValeurCmp = 10uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5470F955;
+Reference = C8;
+ValeurCmp = 0.1uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5500DAAA;
+Reference = C10;
+ValeurCmp = 12pf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A5FE9;
+Reference = C12;
+ValeurCmp = 2.2nf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /550BC16E;
+Reference = C13;
+ValeurCmp = 0.1uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /550BC889;
+Reference = C14;
+ValeurCmp = 0.1uf;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /546DA185;
+Reference = D1;
+ValeurCmp = DIODESCH;
+IdModule  = Diodes_SMD:SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /546D9A7B;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /54711876;
+Reference = J1;
+ValeurCmp = CONN_10;
+IdModule  = watch-v4:omron_XF2M-1015-1A;
+EndCmp
+
+BeginCmp
+TimeStamp = /546DAAA2;
+Reference = L1;
+ValeurCmp = 10uH;
+IdModule  = Resistors_SMD:R_1210;
+EndCmp
+
+BeginCmp
+TimeStamp = /546D9BD4;
+Reference = LIPOLY1;
+ValeurCmp = BATTERY;
+IdModule  = watch-v4:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /5545588B;
+Reference = P1;
+ValeurCmp = array connection;
+IdModule  = watch-v4:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /546DA02D;
+Reference = Q1;
+ValeurCmp = MOSFET_P;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23;
+EndCmp
+
+BeginCmp
+TimeStamp = /546D9A64;
+Reference = R1;
+ValeurCmp = 47Ω;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /546D9C21;
+Reference = R2;
+ValeurCmp = 10kΩ;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /546DA3EF;
+Reference = R3;
+ValeurCmp = R100kΩ;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /546F5EEA;
+Reference = R5;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /546F5F08;
+Reference = R6;
+ValeurCmp = 4.7k;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A6236;
+Reference = SW1;
+ValeurCmp = SPST;
+IdModule  = watch-v4:panasonic-evpav-switch;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A63DC;
+Reference = SW2;
+ValeurCmp = SPST;
+IdModule  = watch-v4:panasonic-evpav-switch;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A6583;
+Reference = SW3;
+ValeurCmp = SPST;
+IdModule  = watch-v4:panasonic-evpav-switch;
+EndCmp
+
+BeginCmp
+TimeStamp = /546D99EE;
+Reference = U1;
+ValeurCmp = IC_MCP73831;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /546DAA54;
+Reference = U2;
+ValeurCmp = MAX1722;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /546F5D09;
+Reference = U3;
+ValeurCmp = DS3231;
+IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /5470F150;
+Reference = U4;
+ValeurCmp = LSM9DS0;
+IdModule  = watch-v4:QFN-24-NO-CENTER4x4mm_Pitch0.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5500094D;
+Reference = U5;
+ValeurCmp = NRF51822;
+IdModule  = Housings_DFN_QFN:UQFN-48-1EP_6x6mm_Pitch0.4mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /550A5E51;
+Reference = U6;
+ValeurCmp = BALUN;
+IdModule  = watch-v4:BALUN;
+EndCmp
+
+BeginCmp
+TimeStamp = /5501416D;
+Reference = X1;
+ValeurCmp = 16mhz;
+IdModule  = watch-v4:SMD-Crystal;
+EndCmp
+
+BeginCmp
+TimeStamp = /550BB9F9;
+Reference = XL1;
+ValeurCmp = USB_MICRO_B;
+IdModule  = watch-v4:USB_Micro-B;
+EndCmp
+
+EndListe
