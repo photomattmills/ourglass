@@ -1,6 +1,6 @@
-update=Wednesday, July 22, 2015 'PMt' 05:11:38 PM
+update=Sunday, April 03, 2016 'PMt' 04:46:08 PM
 version=1
-last_client=cvpcb
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -22,6 +22,9 @@ BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
 [eeschema]
 version=1
 LibDir=
@@ -57,6 +60,3 @@ LibName28=opto
 LibName29=atmel
 LibName30=contrib
 LibName31=valves
-[cvpcb]
-version=1
-NetIExt=net
