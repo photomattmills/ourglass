@@ -7,11 +7,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_LSM9DS0.h>
 
-// any pins can be used
 
-#define SCK 6
-#define MOSI 5
-#define SS 4
 
 RTC_DS1307 rtc;
 
@@ -28,12 +24,12 @@ long display_time;
 
 void setup () {
   // Serial.begin(9600);
-  Wire.beginOnPins(2,3);
+  Wire.beginOnPins(2, 3);
   SPI.begin();
   display.begin();
   display.clearDisplay();
   display.setTextColor(BLACK);
-  if (rtc.now().unixtime() < 1448491950){
+  if (rtc.now().unixtime() < 1463941016) {
     rtc.adjust(DateTime(__DATE__, __TIME__));
   }
 }
@@ -47,10 +43,10 @@ void loop() {
   RFduino_ULPDelay(200);
 }
 
-String zero_pad(int number){
+String zero_pad(int number) {
   if (number < 10) {
     return "0" + String(number);
-    }
+  }
   else {
     return String(number);
   }

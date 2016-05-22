@@ -825,10 +825,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 6950 5800 6950
 Wire Wire Line
-	4100 6250 4200 6250
-Wire Wire Line
-	4100 6850 4100 6250
-Wire Wire Line
 	4200 6850 4100 6850
 Wire Wire Line
 	4200 6250 4200 5950
@@ -1116,12 +1112,12 @@ VCC
 Text Label 4300 2350 0    60   ~ 0
 Backlight
 $Comp
-L NeoPixel U?
+L NeoPixel U7
 U 1 1 570D0584
 P 4850 1050
-F 0 "U?" H 4550 1390 50  0000 C CNN
+F 0 "U7" H 4550 1390 50  0000 C CNN
 F 1 "NeoPixel" H 4650 700 50  0000 C CNN
-F 2 "" H 4775 1000 50  0000 C CNN
+F 2 "LEDs:Neopixel" H 4775 1000 50  0000 C CNN
 F 3 "" H 4775 1000 50  0000 C CNN
 	1    4850 1050
 	1    0    0    -1  
@@ -1134,4 +1130,18 @@ Wire Wire Line
 	4350 1275 3900 1275
 Wire Wire Line
 	5300 850  5550 850 
+Text Label 4300 5000 0    60   ~ 0
+ClockINT
+Text Label 4300 5100 0    60   ~ 0
+Accel_INT
+Text Label 3350 6950 0    60   ~ 0
+Accel_INT
+Text GLabel 4100 6850 0    60   Input ~ 0
+VCC
+Wire Wire Line
+	3350 6950 4200 6950
+Text Label 750  6350 0    60   ~ 0
+ClockINT
+Wire Wire Line
+	750  6350 1350 6350
 $EndSCHEMATC
