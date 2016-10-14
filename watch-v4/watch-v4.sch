@@ -611,7 +611,9 @@ Wire Wire Line
 Wire Wire Line
 	12825 3825 13025 3825
 Wire Wire Line
-	12625 2975 12625 3525
+	12625 2975 12625 3325
+Wire Wire Line
+	12625 3325 12625 3525
 Wire Wire Line
 	12125 3825 12425 3825
 Wire Wire Line
@@ -686,7 +688,9 @@ Wire Wire Line
 	2425 1975 2775 1975
 Connection ~ 4725 2425
 Wire Wire Line
-	4425 2425 4925 2425
+	4425 2425 4725 2425
+Wire Wire Line
+	4725 2425 4925 2425
 Wire Wire Line
 	4725 2825 4925 2825
 Wire Wire Line
@@ -700,25 +704,31 @@ Wire Wire Line
 Wire Wire Line
 	6200 7950 6200 7550
 Wire Wire Line
-	5750 7950 6200 7950
+	5750 7950 6000 7950
+Wire Wire Line
+	6000 7950 6200 7950
 Connection ~ 2475 1375
 Wire Wire Line
 	2475 1225 2475 1375
 Wire Wire Line
 	2475 725  2475 825 
 Wire Wire Line
-	2275 3225 2775 3225
-Wire Wire Line
 	4925 3675 5175 3825
 Connection ~ 5325 3825
 Connection ~ 5325 3225
 Connection ~ 5725 3525
 Wire Wire Line
-	5725 3225 5725 3825
+	5725 3225 5725 3525
 Wire Wire Line
-	5625 3525 6275 3525
+	5725 3525 5725 3825
 Wire Wire Line
-	5175 3825 5425 3825
+	5625 3525 5725 3525
+Wire Wire Line
+	5725 3525 6275 3525
+Wire Wire Line
+	5175 3825 5325 3825
+Wire Wire Line
+	5325 3825 5425 3825
 Wire Wire Line
 	4425 2425 4425 2525
 Wire Wire Line
@@ -728,7 +738,9 @@ Wire Wire Line
 Wire Wire Line
 	2775 1375 2775 1425
 Wire Wire Line
-	2275 1375 2775 1375
+	2275 1375 2475 1375
+Wire Wire Line
+	2475 1375 2775 1375
 Wire Wire Line
 	2775 2775 2625 2775
 Wire Wire Line
@@ -759,7 +771,13 @@ Connection ~ 6000 8350
 Connection ~ 5800 8350
 Connection ~ 5900 8350
 Wire Wire Line
-	5300 8350 6200 8350
+	5300 8350 5800 8350
+Wire Wire Line
+	5800 8350 5900 8350
+Wire Wire Line
+	5900 8350 6000 8350
+Wire Wire Line
+	6000 8350 6200 8350
 Connection ~ 6000 7950
 Wire Wire Line
 	7200 9850 7350 9850
@@ -787,7 +805,13 @@ Connection ~ 6150 10150
 Connection ~ 6050 10150
 Connection ~ 5850 10150
 Wire Wire Line
-	5750 10150 6250 10150
+	5750 10150 5850 10150
+Wire Wire Line
+	5850 10150 6050 10150
+Wire Wire Line
+	6050 10150 6150 10150
+Wire Wire Line
+	6150 10150 6250 10150
 Connection ~ 1275 10100
 Wire Wire Line
 	1275 9850 1275 10100
@@ -816,7 +840,9 @@ Connection ~ 1225 8900
 Wire Wire Line
 	3225 8900 2875 8900
 Wire Wire Line
-	1025 8900 1425 8900
+	1025 8900 1225 8900
+Wire Wire Line
+	1225 8900 1425 8900
 Wire Wire Line
 	2875 8750 3075 8750
 Wire Wire Line
@@ -828,13 +854,17 @@ Wire Wire Line
 Wire Wire Line
 	15375 3475 15575 3475
 Wire Wire Line
-	14575 3475 14575 4025
+	14575 3475 14575 3925
+Wire Wire Line
+	14575 3925 14575 4025
 Wire Wire Line
 	14775 3475 14575 3475
 Text Label 13675 3325 2    60   ~ 0
 Regulator_In
 Wire Wire Line
-	13025 3325 13675 3325
+	13025 3325 13525 3325
+Wire Wire Line
+	13525 3325 13675 3325
 $Comp
 L C C1
 U 1 1 55AF389A
@@ -897,7 +927,9 @@ F 3 "" H 12825 2175 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12825 1875 12825 2175
+	12825 1875 12825 2075
+Wire Wire Line
+	12825 2075 12825 2175
 $Comp
 L GND-RESCUE-watch-v4 #PWR19
 U 1 1 55AF865D
@@ -913,7 +945,11 @@ Wire Wire Line
 	12825 2075 13075 2075
 Connection ~ 12825 2075
 Wire Wire Line
-	10750 5225 10750 5525
+	10750 5225 10750 5325
+Wire Wire Line
+	10750 5325 10750 5425
+Wire Wire Line
+	10750 5425 10750 5525
 $Comp
 L GND #PWR7
 U 1 1 56272AEE
@@ -936,17 +972,11 @@ F 3 "" H 6900 1825 60  0000 C CNN
 	1    6900 1825
 	0    -1   -1   0   
 $EndComp
-Text Label 2275 2975 0    60   ~ 0
+Text Label 2775 3025 2    60   ~ 0
 EX8
-Wire Wire Line
-	2275 2975 2775 2975
-Wire Wire Line
-	2775 2975 2775 3025
-Text Label 2275 3125 0    60   ~ 0
+Text Label 2775 3125 2    60   ~ 0
 EX9
-Wire Wire Line
-	2275 3125 2775 3125
-Text Label 2275 3225 0    60   ~ 0
+Text Label 2775 3225 2    60   ~ 0
 EX10
 Wire Wire Line
 	6200 1975 6150 1975
@@ -1015,26 +1045,16 @@ Text GLabel 10720 6825 0    60   Input ~ 0
 SDA
 Wire Wire Line
 	10720 6825 10925 6825
-Text Label 2275 3425 0    60   ~ 0
+Text Label 2775 3425 2    60   ~ 0
 EX12
-Text Label 2275 3325 0    60   ~ 0
+Text Label 2775 3325 2    60   ~ 0
 EX11
-Text Label 2275 3525 0    60   ~ 0
+Text Label 2775 3525 2    60   ~ 0
 EX13
-Text Label 2275 3625 0    60   ~ 0
+Text Label 2775 3625 2    60   ~ 0
 EX14
-Text Label 2275 3725 0    60   ~ 0
+Text Label 2775 3725 2    60   ~ 0
 EX15
-Wire Wire Line
-	2275 3325 2775 3325
-Wire Wire Line
-	2275 3425 2775 3425
-Wire Wire Line
-	2275 3525 2775 3525
-Wire Wire Line
-	2275 3625 2775 3625
-Wire Wire Line
-	2275 3725 2775 3725
 Wire Wire Line
 	10425 7225 10925 7225
 Text Label 10425 7025 0    60   ~ 0
@@ -1167,7 +1187,9 @@ $EndComp
 Wire Wire Line
 	11025 2350 10775 2350
 Wire Wire Line
-	11025 2550 11025 2800
+	11025 2550 11025 2675
+Wire Wire Line
+	11025 2675 11025 2800
 $Comp
 L GND #PWR13
 U 1 1 5800CB9B
@@ -1208,7 +1230,9 @@ Wire Wire Line
 Wire Wire Line
 	11025 3025 11375 3025
 Wire Wire Line
-	11025 3000 11025 3100
+	11025 3000 11025 3025
+Wire Wire Line
+	11025 3025 11025 3100
 Connection ~ 11025 3025
 $Comp
 L R_Small R4
@@ -1226,7 +1250,9 @@ VCC
 Wire Wire Line
 	1425 9100 1425 9050
 Wire Wire Line
-	975  9100 1425 9100
+	975  9100 1225 9100
+Wire Wire Line
+	1225 9100 1425 9100
 Connection ~ 1225 9100
 $Comp
 L LED D5
@@ -1292,10 +1318,16 @@ Wire Wire Line
 Wire Wire Line
 	8325 4525 8500 4525
 Wire Wire Line
-	8500 4525 8500 5175
+	8500 4525 8500 4850
+Wire Wire Line
+	8500 4850 8500 5175
 Connection ~ 8500 4850
 Wire Wire Line
-	8900 4525 8900 5375
+	8900 4525 8900 4850
+Wire Wire Line
+	8900 4850 8900 5175
+Wire Wire Line
+	8900 5175 8900 5375
 Connection ~ 8900 4850
 Connection ~ 8900 5175
 $EndSCHEMATC
