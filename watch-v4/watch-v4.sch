@@ -475,9 +475,9 @@ F 3 "~" H 4650 3400 60  0000 C CNN
 $EndComp
 Text Label 15175 1625 1    60   ~ 0
 Reset
-Text Label 15275 1625 1    60   ~ 0
-TX
 Text Label 15375 1625 1    60   ~ 0
+TX
+Text Label 15275 1625 1    60   ~ 0
 RX
 Text Label 2400 4850 0    60   ~ 0
 Reset
@@ -851,13 +851,13 @@ Wire Wire Line
 $Comp
 L GND-RESCUE-watch-v4 #PWR023
 U 1 1 58005D02
-P 850 4650
-F 0 "#PWR023" H 850 4650 30  0001 C CNN
-F 1 "GND" H 850 4580 30  0001 C CNN
-F 2 "" H 850 4650 60  0000 C CNN
-F 3 "" H 850 4650 60  0000 C CNN
-	1    850  4650
-	0    1    1    0   
+P 1250 4350
+F 0 "#PWR023" H 1250 4350 30  0001 C CNN
+F 1 "GND" H 1250 4280 30  0001 C CNN
+F 2 "" H 1250 4350 60  0000 C CNN
+F 3 "" H 1250 4350 60  0000 C CNN
+	1    1250 4350
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	850  4650 1250 4650
@@ -1130,7 +1130,7 @@ Text Label 1325 8050 0    60   ~ 0
 VCC
 Text Label 2200 2150 0    60   ~ 0
 VCC
-Text Label 1250 4350 0    60   ~ 0
+Text Label 850  4650 0    60   ~ 0
 VCC
 Text Label 2700 3450 2    60   ~ 0
 VCC
@@ -1160,9 +1160,9 @@ Text Label 3175 8350 0    60   ~ 0
 SDA
 Text Label 3175 8200 0    60   ~ 0
 SCL
-Text Label 1250 4750 2    60   ~ 0
-SDA
 Text Label 1250 4850 2    60   ~ 0
+SDA
+Text Label 1250 4750 2    60   ~ 0
 SCL
 Text Label 14975 5450 2    60   ~ 0
 Display_SS
