@@ -1160,9 +1160,9 @@ Text Label 3175 8350 0    60   ~ 0
 SDA
 Text Label 3175 8200 0    60   ~ 0
 SCL
-Text Label 1250 4750 2    60   ~ 0
-SDA
 Text Label 1250 4850 2    60   ~ 0
+SDA
+Text Label 1250 4750 2    60   ~ 0
 SCL
 Text Label 14975 5450 2    60   ~ 0
 Display_SS
