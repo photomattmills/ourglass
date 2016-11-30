@@ -475,9 +475,9 @@ F 3 "~" H 4650 3400 60  0000 C CNN
 $EndComp
 Text Label 15175 1625 1    60   ~ 0
 Reset
-Text Label 15275 1625 1    60   ~ 0
-TX
 Text Label 15375 1625 1    60   ~ 0
+TX
+Text Label 15275 1625 1    60   ~ 0
 RX
 Text Label 2400 4850 0    60   ~ 0
 Reset
