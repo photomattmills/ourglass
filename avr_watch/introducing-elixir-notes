@@ -1,0 +1,1 @@
+Then you need to set your path so that it can find elixir/bin. - Page 2 - if you install packages, you don't need to mess with your path, usually, only if you're compiling from source. 
