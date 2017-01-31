@@ -24,12 +24,12 @@ long display_time;
 
 void setup () {
   // Serial.begin(9600);
-  Wire.beginOnPins(2, 3);
+  Wire.beginOnPins(3, 2);
   SPI.begin();
   display.begin();
   display.clearDisplay();
   display.setTextColor(BLACK);
-  if (rtc.now().unixtime() < 1466755575) {
+  if (rtc.now().unixtime() < 1480490604) {
     rtc.adjust(DateTime(__DATE__, __TIME__));
   }
 }

@@ -1,2 +1,4 @@
 (fp_lib_table
+  (lib (name crennelated)(type KiCad)(uri "$(KIPRJMOD)/crennelated.pretty")(options "")(descr ""))
+  (lib (name watch-v4)(type KiCad)(uri "$(KIPRJMOD)/crennelated.pretty")(options "")(descr ""))
 )
