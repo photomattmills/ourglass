@@ -1,10 +1,12 @@
 #include <Wire.h>
 #include "RTClib.h"
 #include <SPI.h>
-#include "analog_face.h"
-#include "digital_face.h"
+#ifndef  __sharp__
 #include <Adafruit_GFX.h>
 #include <Adafruit_SharpMem.h>
+#endif
+#include "analog_face.h"
+#include "digital_face.h"
 #include <Adafruit_Sensor.h>
 #include <Adafruit_LSM9DS0.h>
 #include <math.h>
@@ -16,14 +18,14 @@ RTC_DS1307 rtc;
 Adafruit_SharpMem display(SCK, MOSI, SS);
 
 AnalogFace analog_face(&display, &rtc);
-DigitalFace digital_display;
+DigitalFace digital_face;
 long ms;
 long display_time;
 
 int menu_active;
 
-#define BLACK 0
-#define WHITE 1
+#define BLACK 1
+#define WHITE 0
 
 Adafruit_LSM9DS0 lsm = Adafruit_LSM9DS0(1000);
 uint32_t steps = 0;
@@ -41,7 +43,7 @@ void setup () {
   display.begin();
   display.clearDisplay();
   display.setTextColor(BLACK);
-  if (rtc.now().unixtime() < 1485850477){
+  if (rtc.now().unixtime() < 1486924071){
     rtc.adjust(DateTime(__DATE__, __TIME__));
   }
 
@@ -135,20 +137,35 @@ int screen_redraw(uint32_t pin){
 }
 
 int draw_watchface(uint32_t ulPin){
-  analog_face.displayAnalog();
-  display.setCursor(59, 105);
+  DateTime now = rtc.now();
+  // analog_face.displayAnalog();
+  display.clearBuffer();
+  display.setCursor(2,5);
+  digital_face.displayDigital(now, display, 5, 40);
+  // display.setCursor(59, 105);
 
-  display.println(zero_pad(rtc.now().second()));
+  // display.println(zero_pad(rtc.now().second()));
   // display.println(menu_active);
 
-  display.setCursor(40,95);
+  // display.setCursor(40,95);
   // Convert the analog reading (which goes from 0 - 1023) to a voltage (0 - 3.3V):
   int sensorValue = analogRead(battery_sense);
-  float voltage = sensorValue * (3.3/1023.0);
-  display.print(voltage);
-  display.print(" ");
-  display.println(sensorValue);
+  // float voltage = sensorValue * (3.3/1023.0);
+  // display.print(voltage*2);
+  display.print(sensorValue - 520);
+  display.print("/85");
+
+  display.setCursor(2,87);
+  display.print(zero_pad(now.month()));
+  display.print('/');
+  display.print(zero_pad(now.day()));
+  display.print('/');
+  display.print(zero_pad(now.year()));
+  display.print(' ');
+  display.print(' ');
+  display.print(analog_face.day(now.unixtime()));
   display.refresh();
+
 
   return 0;
 }
@@ -160,7 +177,7 @@ int active_item;
 int max_items = 3;
 
 int draw_menu(uint32_t pin){
-  display.clearBuffer();
+  display.clearDisplay();
   display.setCursor(1,1);
   display.setTextSize(2);
 
@@ -174,7 +191,7 @@ int draw_menu(uint32_t pin){
     }
   }
   // display.println(active_item);
-  digital_display.displayDigital(rtc.now(), display, 0, 100);
+  digital_face.displayDigital(rtc.now(), display, 0, 100);
   display.refresh();
   return 0;
 }

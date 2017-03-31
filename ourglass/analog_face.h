@@ -6,8 +6,10 @@ Copyright Matt Mills, 2015. Released under the MIT
 license.
 
 *******************************************************/
+#ifndef __sharp__
 #include </Users/matt/Documents/Arduino/libraries/Adafruit_GFX_Library/Adafruit_GFX.h>
 #include </Users/matt/Documents/Arduino/libraries/Adafruit_SHARP_Memory_Display/Adafruit_SharpMem.h>
+#endif
 
 #include <avr/pgmspace.h>
 #include "RTClib.h"
@@ -28,7 +30,7 @@ class AnalogFace {
     void drawHourHand(void);
     void drawRectangle(uint8_t x_points[], uint8_t y_points[]);
     void drawMarkers(void);
-    String day(void);
+    String day(unsigned long epoch);
     int currentHourPosition(void);
     int currentMinutePosition(void);
     int currentSecondPosition(void);

@@ -10,6 +10,7 @@ AnalogFace::AnalogFace(Adafruit_SharpMem *display, RTC_DS1307 *rtc) {
 void AnalogFace::displayAnalog() {
   _epoch = _rtc->now().unixtime();
   _display->writeBuffer(watchFace);
+  _display->clearBuffer();
   drawMinuteHand();
   drawDate();
   drawHourHand();
@@ -18,7 +19,7 @@ void AnalogFace::displayAnalog() {
 void AnalogFace::drawDate() {
   _display->setCursor(86, 61);
   _display->setTextSize(1);
-  _display->print(day() + " " + _rtc->now().day());
+  _display->print(day(_rtc->now().unixtime()) + " " + _rtc->now().day());
 }
 
 void AnalogFace::drawMinuteHand() {
@@ -45,8 +46,8 @@ void AnalogFace::drawRectangle(uint8_t x_points[], uint8_t y_points[]){
 // the following function depends on the fact that the
 // unix epoch began on a thursday.
 
-String AnalogFace::day(){
-  int num = (_epoch / 86400) % 7;
+String AnalogFace::day(unsigned long epoch){
+  int num = (epoch / 86400) % 7;
   switch (num) {
     case 0:
     return "thr";

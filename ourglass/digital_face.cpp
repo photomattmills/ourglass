@@ -15,8 +15,11 @@ void DigitalFace::displayDigital(DateTime now, Adafruit_SharpMem display, uint32
   currentSecond(epoch % 60);
 
   display.setTextSize(2);
-  display.setTextColor(BLACK);
-  display.print(hour+":"+minutes+":"+seconds);
+  display.setTextColor(WHITE);
+  display.print(hour+":"+minutes+":");
+  display.setTextSize(1);
+  display.setCursor(x_offset + 72,y_offset+4);
+  display.print(seconds);
 }
 
 void DigitalFace::currentHour(unsigned long h_number){
